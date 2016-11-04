@@ -1,0 +1,39 @@
+body {
+    background-color: green;
+}
+
+.center {
+    text-align: center;
+    
+}
+
+div {
+
+    width: 96%;
+    margin: 0 auto;
+    padding-top: 100px;
+    font-size: 2em;
+    background-color: deeppink;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px){
+ 
+    div {
+    margin-top: 100px;
+    float: left;
+    width: 48%;
+    margin: 1%;
+    padding-top: 100px;
+    font-size: 3em;
+    background-color: yellow;
+}
+
+}
