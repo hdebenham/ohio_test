@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Practice whoop whoop</title>
+    <link rel="stylesheet" type="text/css" href="css/counter.css">
+</head>
+<body>
+    <div class="catcounter">
+    <h1 class="counter">0</h1>
+    <h2>Bobcats</h2>
+    
+    <div>
+        <button id="decrease"> - </button>
+        <button id="increase"> + </button>
+    </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+    
+        var bobcats = 0;
+        $('button').click(function() {
+            if($(this).attr('id')==='increase'){
+                bobcats = bobcats + 1;
+                console.log(bobcats);
+            } else {
+                bobcats = bobcats - 1;
+                console.log(bobcats);
+            }
+            $('.counter').text(bobcats)
+            
+        });
+    
+    </script>
+</body>    
+</html>
