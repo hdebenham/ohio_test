@@ -6,8 +6,8 @@
 </head>
 <body>
     <div class="catcounter">
-    <h1 class="counter">0</h1>
-    <h2>Bobcats</h2>
+        <img src="https://www.placebear.com/600/500" id="grr">
+    <h2>GRRRR!!</h2>
     
     <div>
         <button id="decrease"> - </button>
@@ -19,16 +19,18 @@
     
     <script type="text/javascript">
     
-        var bobcats = 0;
+        var picIndex = 500;
         $('button').click(function() {
             if($(this).attr('id')==='increase'){
-                bobcats = bobcats + 1;
-                console.log(bobcats);
+                picIndex = picIndex + 1;
+               
             } else {
-                bobcats = bobcats - 1;
-                console.log(bobcats);
+                picIndex = picIndex - 1;
+                
             }
-            $('.counter').text(bobcats)
+            
+            var url = "https://www.placebear.com/600/" + picIndex;
+            $('#grr').attr('src', url)
             
         });
     
